@@ -8,7 +8,7 @@
      vazio = os botões levam para a seção de contato / e-mail.
   ------------------------------------------------------------------ */
   var CONFIG = {
-    whatsapp: '',
+    whatsapp: '5532999526417',
     mensagem: 'Oi, Sena. Quero agendar uma análise da minha operação comercial.',
     email: 'contato@senacomercial.com'
   };
