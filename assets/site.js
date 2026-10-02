@@ -10,7 +10,7 @@
   var CONFIG = {
     whatsapp: '5532999526417',
     mensagem: 'Oi, Sena. Quero agendar uma análise da minha operação comercial.',
-    email: 'contato@senacomercial.com'
+    email: 'airton@senacomercial.com'
   };
 
   var $ = function (s, c) { return (c || document).querySelector(s); };
