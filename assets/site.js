@@ -115,8 +115,8 @@
     lenis.stop();
   }
 
-  /* ---------- largada: 5 luzes amarelas acendem, ficam verdes, a página arranca ---------- */
-  var lights = $$('.start-lights i'), label = $('.start-label');
+  /* ---------- largada: 5 luzes amarelas acendem, ficam verdes, bora vender, a página arranca ---------- */
+  var lights = $$('.start-lights i'), label = $('.start-label'), go = $('.start-go');
   gsap.set('.hero .line-in', { yPercent: 115 });
   gsap.set('[data-hero-fade] > *', { y: 24, autoAlpha: 0 });
   gsap.set('.nav-in', { y: -24, autoAlpha: 0 });
@@ -133,13 +133,14 @@
       lights.forEach(function (l) { l.classList.remove('on'); l.classList.add('go'); });
       if (label) label.textContent = 'sinal verde';
     }, null, 2.05)
-    .to(startEl, { yPercent: -100, duration: 0.9, ease: 'expo.inOut' }, 2.6)
-    .call(function () { if (lenis) lenis.start(); }, null, 3.0)
-    .to('.hero .line-in', { yPercent: 0, duration: 1.2, stagger: 0.09 }, 3.05)
-    .to('[data-pit]', { clipPath: 'inset(0% 0% 0% 0% round 64px)', duration: 1.3, ease: 'expo.inOut', clearProps: 'clipPath' }, 2.9)
-    .to('[data-pit-wolf]', { scale: 1, yPercent: 0, duration: 1.6 }, 3.2)
-    .to('[data-hero-fade] > *', { y: 0, autoAlpha: 1, duration: 1, stagger: 0.1 }, 3.55)
-    .to('.nav-in', { y: 0, autoAlpha: 1, duration: 1, clearProps: 'transform' }, 3.55);
+    .fromTo(go, { autoAlpha: 0, scale: 0.6, yPercent: 20 }, { autoAlpha: 1, scale: 1, yPercent: 0, duration: 0.7, ease: 'back.out(2)' }, 2.25)
+    .to(startEl, { yPercent: -100, duration: 0.9, ease: 'expo.inOut' }, 3.5)
+    .call(function () { if (lenis) lenis.start(); }, null, 3.9)
+    .to('.hero .line-in', { yPercent: 0, duration: 1.2, stagger: 0.09 }, 3.95)
+    .to('[data-pit]', { clipPath: 'inset(0% 0% 0% 0% round 64px)', duration: 1.3, ease: 'expo.inOut', clearProps: 'clipPath' }, 3.8)
+    .to('[data-pit-wolf]', { scale: 1, yPercent: 0, duration: 1.6 }, 4.1)
+    .to('[data-hero-fade] > *', { y: 0, autoAlpha: 1, duration: 1, stagger: 0.1 }, 4.45)
+    .to('.nav-in', { y: 0, autoAlpha: 1, duration: 1, clearProps: 'transform' }, 4.45);
 
   /* ---------- lobo: inclina com o ponteiro, desce com a rolagem ---------- */
   var pit = $('[data-pit]'), wolf = $('[data-pit-wolf] .wolf');

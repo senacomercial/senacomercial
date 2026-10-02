@@ -17,6 +17,7 @@
   --mint: #d1ffca;
   --yellow: #fff100;
   --green: #00d664;
+  --red: #ff2b2b;
   --cream: #fff3ce; /* cor original do lobo na logo */
 
   --f-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
@@ -119,7 +120,7 @@ img, svg { display: block; max-width: 100%; }
   background: var(--black); color: var(--white);
   display: none; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
 }
-.js .start { display: flex; animation: start-failsafe 0s 7s forwards; }
+.js .start { display: flex; animation: start-failsafe 0s 8s forwards; }
 @keyframes start-failsafe { to { visibility: hidden; } }
 .start-lights { display: flex; gap: clamp(10px, 2vw, 18px); }
 .start-lights i {
@@ -130,6 +131,7 @@ img, svg { display: block; max-width: 100%; }
 .start-lights i.on { background: var(--yellow); box-shadow: 0 0 24px rgba(255, 241, 0, .45); }
 .start-lights i.go { background: var(--green); box-shadow: 0 0 28px rgba(0, 214, 100, .55); }
 .start-label { color: var(--smoke); }
+.start-go { font-size: clamp(64px, 13vw, 200px); color: var(--red); text-align: center; white-space: nowrap; visibility: hidden; }
 
 /* ---------- nav ---------- */
 .nav {
