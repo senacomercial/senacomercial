@@ -189,7 +189,7 @@
   }
 
   /* ---------- títulos de seção: sobem por trás da máscara ---------- */
-  $$('.section-head .display, .versus h2').forEach(function (h) {
+  $$('.section-head .display, .numbers-copy .display, .versus h2').forEach(function (h) {
     var inner = document.createElement('span');
     inner.className = 'line-in';
     while (h.firstChild) inner.appendChild(h.firstChild);
