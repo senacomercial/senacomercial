@@ -239,6 +239,9 @@ img, svg { display: block; max-width: 100%; }
 .step-head { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
 .step-num { font-size: clamp(96px, 15vw, 200px); color: var(--canvas); }
 .step-dark .step-num { color: var(--graphite); }
+.steps .step:nth-child(1) .step-num { color: var(--red); }
+.steps .step:nth-child(2) .step-num { color: var(--yellow); }
+.steps .step:nth-child(3) .step-num { color: var(--green); }
 .step-body { display: flex; flex-direction: column; justify-content: flex-end; gap: 32px; }
 .step-body p { font-size: clamp(17px, 1.5vw, 20px); line-height: 1.3; letter-spacing: -.01em; color: var(--slate); }
 .step-dark .step-body p { color: var(--ash); }
