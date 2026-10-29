@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clube Mente Brilhante | 10 minutos sem tela</title>
+<meta name="description" content="Mais de 100 atividades para imprimir e treinar foco, memória, raciocínio, coordenação e autocontrole em 10 minutos por dia.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --ink:#4a3826; --ink2:#6b4a24; --accent:#8f4a28; --accent2:#b45e34;
+    --line:#ead8b8; --card:#fffdf7; --green:#2c751e; --green-d:#225c17;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Trebuchet MS',Verdana,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:#fcf8ec;-webkit-text-size-adjust:100%}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.18;color:var(--ink)}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  .wide{max-width:980px}
+  section{padding:56px 0}
+  h2{font-size:clamp(1.65rem,5.4vw,2.2rem);margin-bottom:16px}
+  h3{font-size:1.2rem;margin-bottom:6px}
+  p+p{margin-top:12px}
+  .eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+  .center{text-align:center}
+
+  .topbar{position:sticky;top:0;z-index:20;background:#fcf8ec;border-bottom:1px solid var(--line)}
+  .topbar .wrap{max-width:980px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:700;color:var(--ink);text-decoration:none}
+  .brand img{width:34px;height:34px}
+  .topbar nav{display:flex;gap:6px}
+  .topbar nav a{color:var(--ink2);text-decoration:none;font-size:.92rem;padding:6px 10px;border-radius:999px}
+  .topbar nav a:hover{background:var(--line)}
+
+  .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:16px 28px;border-radius:12px;box-shadow:0 4px 0 var(--green-d);text-align:center;transition:transform .08s,box-shadow .08s}
+  .btn:hover{background:#34862a}
+  .btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--green-d)}
+  .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+  .micro{font-size:.88rem;color:var(--ink2);margin-top:12px}
+  .cta{margin-top:26px}
+
+  .hero{background:#fbf3e3;padding:56px 0 64px}
+  .hero h1{font-size:clamp(2rem,7.4vw,3rem);margin-bottom:18px}
+  .hero .lead{font-size:1.1rem}
+
+  .benefits{background:#fcf8ec}
+  .ticks{list-style:none;margin:18px 0 28px}
+  .ticks li{position:relative;padding:9px 0 9px 34px;border-bottom:1px solid var(--line)}
+  .ticks li::before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:50%;background:var(--green)}
+  .ticks li::after{content:"";position:absolute;left:7px;top:18px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .photos{display:grid;gap:18px;grid-template-columns:1fr}
+  .photos figure{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .photos figcaption{padding:12px 14px;font-size:.95rem}
+  .photos figcaption strong{display:block;font-family:Georgia,serif;font-size:1.05rem}
+
+  .story{background:#e7e8cd}
+  .story img{margin:26px auto 0;border-radius:14px;max-width:420px}
+
+  .intro{background:#fbf3e3}
+  .intro img{margin:26px auto;border-radius:14px}
+  .secure{margin-top:12px;font-size:.92rem;color:var(--ink2)}
+
+  .method{background:#fbf3e3}
+  .focos{display:grid;gap:14px;margin:24px 0;grid-template-columns:1fr}
+  .foco{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .foco img{width:64px;height:64px;object-fit:contain}
+  .foco h3{margin:0}
+  .foco p{font-size:.96rem;color:var(--ink2)}
+
+  .showcase{background:#fff8e9}
+  .showcase .prev{margin:22px auto;border-radius:14px;border:1px solid var(--line)}
+  .thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+  .thumbs figure{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-align:center}
+  .thumbs figcaption{padding:8px;font-size:.9rem;font-weight:700}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+  .tags span{background:#f2dbc6;color:var(--ink);border-radius:999px;padding:6px 14px;font-size:.9rem}
+
+  .ba{background:#fff8e9;padding-top:0}
+  .ba .cols{display:grid;gap:16px;margin-top:20px}
+  .ba .col{border-radius:14px;padding:20px;border:1px solid var(--line)}
+  .ba .before{background:#f6e9d2}
+  .ba .after{background:#e7efd3;border-color:#c9d9a6}
+
+  .rec{background:#f6e9d2}
+
+  .bonus{background:#fbefd3}
+  .bgrid{display:grid;gap:14px;margin-top:22px}
+  .bcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .bcard .tag{font-size:.78rem;font-weight:700;color:var(--accent);letter-spacing:.05em;text-transform:uppercase}
+  .bcard h3{margin:2px 0 4px}
+  .bcard .inc{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:700;color:var(--green)}
+
+  .pricing{background:#dfe7cb}
+  .box{background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:24px;margin-top:18px}
+  .price{margin-top:20px;padding-top:18px;border-top:2px dashed var(--line)}
+  .price .big{font-family:Georgia,serif;font-size:2.8rem;font-weight:700;line-height:1}
+  .price .sub{color:var(--ink2);margin-top:6px}
+  .price .cta{margin-top:18px}
+  .price .btn{display:block}
+
+  .guarantee{background:#fcf8ec}
+  .guarantee .sel{width:130px;margin:0 auto 14px}
+
+  .faq{background:#fff8e9}
+  details{border-bottom:1px solid var(--line);padding:14px 0}
+  summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--accent)}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:10px;color:var(--ink2)}
+
+  .final{background:#f2dbc6}
+  .final h2{font-size:clamp(1.5rem,5vw,2rem)}
+
+  footer{background:var(--ink);color:#ead8b8;font-size:.85rem;padding:32px 0 100px}
+  footer p+p{margin-top:10px}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fffdf7;border-top:2px solid var(--ink);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
+  .sticky.on{transform:none}
+  .sticky span{font-weight:700;line-height:1.2}
+  .sticky span small{display:block;font-weight:400;color:var(--ink2)}
+  .sticky .btn{padding:12px 18px;font-size:1rem;box-shadow:0 3px 0 var(--green-d);white-space:nowrap}
+
+  @media (min-width:720px){
+    .photos{grid-template-columns:repeat(3,1fr)}
+    .focos{grid-template-columns:1fr 1fr}
+    .thumbs{grid-template-columns:repeat(4,1fr)}
+    .ba .cols,.bgrid{grid-template-columns:1fr 1fr}
+    .sticky{display:none}
+  }
+  @media (max-width:480px){ .topbar nav a:nth-child(2){display:none} }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .btn,.sticky{transition:none} }
+</style>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="https://metodorendaturbo.com/wp-content/uploads/2026/07/icon-mente-brilhante.png" alt="" width="34" height="34"> Clube Mente Brilhante</a>
+    <nav aria-label="Seções"><a href="#oferta">Oferta</a><a href="#bonus">Bônus</a><a href="#metodo">Método</a></nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Em 10 minutos por dia, sem tela, seu filho volta a focar, termina a lição sem choro e aprende brincando.</h1>
+    <p class="lead">Seu filho começa tudo e não termina nada, vive no mundo da lua e trava na hora da lição? Esse é o melhor ponto de partida.</p>
+    <p>São mais de 100 atividades para imprimir que pegam na mão dele e treinam o foco como quem brinca, uma de cada vez, sem ele perceber que está aprendendo.</p>
+    <div class="cta"><a class="btn" href="#oferta">Quero começar hoje</a></div>
+    <p class="micro">Acesso na hora · imprime quantas vezes quiser · garantia de 7 dias</p>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="wrap">
+    <span class="eyebrow">A partir de hoje</span>
+    <h2>O que muda na rotina do seu filho</h2>
+    <ul class="ticks">
+      <li>A criança que largava tudo pela metade começa a terminar o que começa, porque cada atividade é curta o bastante pra ela chegar ao fim.</li>
+      <li>O "eu não consigo" vai virando "deixa que eu faço", e a confiança volta na mesa da cozinha.</li>
+      <li>A tarde depois da aula e a hora antes de dormir ficam mais calmas, sem grito e sem tela pra acalmar.</li>
+      <li>Funciona com a criança agitada, que não para quieta, ou com a que vive distraída no mundo dela.</li>
+      <li>Treina o que a escola cobra mas não ensina direito: atenção, paciência e autocontrole.</li>
+      <li>Pra ela é brincadeira. Quem sabe que por trás disso tem treino de foco é você.</li>
+      <li>Cabe em qualquer rotina corrida: 10 minutos por dia já começam a mudar a história.</li>
+    </ul>
+    <div class="photos">
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/mockup-atividades.webp" alt="Criança usando folhas de atividades impressas com lápis em uma mesa."><figcaption><strong>Atividades curtas na mesa de casa</strong>Um ritual simples, sem tela, para caber na rotina.</figcaption></figure>
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foto-mae-crianca-1.webp" alt="Mãe acompanhando criança focada em atividades impressas."><figcaption><strong>10 minutos com presença</strong>Você acompanha, ele conclui e ganha confiança.</figcaption></figure>
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foto-material-em-uso.webp" alt="Apostilas e folhas de atividades do Clube Mente Brilhante."><figcaption><strong>Imprime e repete</strong>PDFs em A4 para usar quantas vezes quiser.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Cansada de transformar a lição de casa num campo de batalha?</h2>
+    <p>Você conhece a cena de cor. São seis da tarde, o caderno aberto na mesa, e seu filho olhando pra qualquer coisa menos pra folha.</p>
+    <p>Você explica uma vez, duas, três. Ele se levanta, mexe em tudo, volta, e em cinco minutos já esqueceu o que era pra fazer. Aí vem o "eu não consigo", o choro, e a sua paciência indo embora junto com a tarde.</p>
+    <p>E não para na lição. Tem o bilhete na agenda, a professora pedindo "uma conversa", a sugestão de procurar avaliação e a comparação silenciosa com os colegas que sentam e fazem.</p>
+    <p>Agora a parte que ninguém te conta: o problema raramente é o seu filho. É a disputa que ele perde todo dia pra uma tela desenhada para prender atenção.</p>
+    <p><strong>O foco dele não está quebrado. Está sem treino.</strong> E foco se treina igual a qualquer músculo: pouco, todo dia, do jeito certo.</p>
+    <img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/app-cat-at-1.png" alt="Criança concentrada em uma atividade de observação.">
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap center">
+    <span class="eyebrow">Apresento</span>
+    <h2>O Clube Mente Brilhante</h2>
+    <p>O primeiro clube de atividades que treina o foco do seu filho brincando, sem tela e em 10 minutos por dia.</p>
+    <p>São mais de 100 atividades testadas, todas para imprimir, organizadas por habilidade e em ordem de dificuldade. Cada folha é curta de propósito: começa fácil, prende a criança e termina antes dela cansar.</p>
+    <p>Por trás de cada atividade tem um método: a Trilha dos 5 Focos, a sequência que ativa, na idade certa, as cinco áreas que a criança mais precisa pra aprender.</p>
+    <img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/ChatGPT-Image-21-de-jul.-de-2026-09_21_14-1.png" alt="Clube Mente Brilhante: atividades de foco para imprimir.">
+    <div class="cta"><a class="btn" href="#oferta" data-cta="intro">Quero o Clube Mente Brilhante ➝</a></div>
+    <p class="secure">✅ Compra 100% segura</p>
+  </div>
+</section>
+
+<section class="method" id="metodo">
+  <div class="wrap wide">
+    <h2 class="center">Por que a Trilha dos 5 Focos funciona tão rápido</h2>
+    <p class="center" style="max-width:700px;margin:0 auto">A maioria das atividades estimula uma coisa só, fora de ordem e sem progressão. A Trilha dos 5 Focos resolve isso porque cada semana cuida das cinco áreas que sustentam o aprender.</p>
+    <div class="focos">
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foco-atencao.webp" alt=""><div><h3>Atenção</h3><p>Desafios curtos e cronometrados que ensinam a começar e terminar uma tarefa.</p></div></div>
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foco-memoria.webp" alt=""><div><h3>Memória</h3><p>Jogos de lembrar e comparar que fortalecem a retenção.</p></div></div>
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foco-raciocinio.webp" alt=""><div><h3>Raciocínio</h3><p>Formas, padrões e sequências lógicas que destravam o pensar.</p></div></div>
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foco-coordenacao.webp" alt=""><div><h3>Coordenação</h3><p>Traçado, recorte e olho-mão que preparam a mão pra escrita.</p></div></div>
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/foco-autocontrole.webp" alt=""><div><h3>Autocontrole</h3><p>Atividades de calma e respiração que reduzem a birra e a frustração.</p></div></div>
+      <div class="foco"><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/r-presente.webp" alt=""><div><h3>Progressão</h3><p>Uma sequência simples que começa fácil, aumenta aos poucos e ajuda a criança a sentir que consegue.</p></div></div>
+    </div>
+    <p class="center" style="max-width:700px;margin:0 auto">As atividades são curtas, vêm em ordem crescente, são sem tela e funcionam justamente com a criança agitada. Os primeiros sinais costumam aparecer já na primeira semana.</p>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="wrap wide">
+    <div class="center" style="max-width:760px;margin:0 auto">
+      <span class="eyebrow">Vitrine do material</span>
+      <h2>Mais de 100 atividades, separadas por habilidade, pra você nunca ficar sem o que dar</h2>
+      <p>Folheie antes de levar. Veja as folhas por dentro: o tamanho, o traçado, o espaço pra criança fazer.</p>
+    </div>
+    <img class="prev" loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/preview-at-01.webp" alt="Prévia de uma atividade impressa de foco e atenção do Clube Mente Brilhante.">
+    <div class="center" style="max-width:760px;margin:0 auto">
+      <h3>Material com cara de rotina real</h3>
+      <p>Folhas A4, preto e branco para economizar tinta, separadas por habilidade e prontas para entrar na mochila, na pasta ou na mesa da cozinha.</p>
+      <div class="cta"><a class="btn" href="#oferta" data-cta="vitrine">Quero imprimir hoje ➝</a></div>
+    </div>
+    <div class="thumbs">
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/sdsss.png" alt=""><figcaption>Foco e Atenção</figcaption></figure>
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/ccccccccccc.png" alt=""><figcaption>Memória e Concentração</figcaption></figure>
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/cccxxxxx.png" alt=""><figcaption>Formas e Padrões</figcaption></figure>
+      <figure><img loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/vcccc.png" alt=""><figcaption>Traçado e Coordenação</figcaption></figure>
+    </div>
+    <div class="tags center" style="justify-content:center">
+      <span>Foco e Atenção</span><span>Memória e Concentração</span><span>Formas e Padrões</span><span>Sequências Lógicas</span><span>Traçado e Coordenação Motora Fina</span><span>Cores e Pareamento</span><span>Coordenação Olho-Mão</span><span>Brincadeiras 100% sem tela</span>
+    </div>
+    <p class="center" style="max-width:700px;margin:0 auto">Tudo em alta resolução, em preto e branco pra economizar tinta, no tamanho A4 que cabe em qualquer impressora de casa.</p>
+  </div>
+</section>
+
+<section class="ba">
+  <div class="wrap">
+    <span class="eyebrow">A virada</span>
+    <h2>A distância entre uma cena e a outra cabe em 10 minutos por dia</h2>
+    <div class="cols">
+      <div class="col before"><h3>Antes do Clube</h3><p>Larga a atividade no meio, trava no "eu não consigo", precisa de tela pra ficar quieto, perde no caderno o que aprendeu na aula, e a hora da lição vira choro pros dois lados.</p></div>
+      <div class="col after"><h3>Depois de algumas semanas</h3><p>Senta e termina o que começou, faz com mais calma e menos birra, fica mais tempo concentrado sem tela, lembra melhor do que estudou e descobre que conseguir é gostoso.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Removidos de propósito: bio da "mentora" (persona fictícia) e depoimentos com nomes inventados.
+     Se tiver relatos reais de clientes, com autorização, crie a seção aqui. -->
+
+<section class="rec">
+  <div class="wrap">
+    <span class="eyebrow">Para quem é</span>
+    <h2>Pra quem o Clube Mente Brilhante é recomendado?</h2>
+    <ul class="ticks">
+      <li>Mãe ou pai de criança de 3 a 10 anos, agitada, distraída ou no mundo da lua.</li>
+      <li>Quem está cansado de usar a tela como muleta.</li>
+      <li>Quem recebeu bilhete da escola sobre atenção ou comportamento.</li>
+      <li>Quem tem rotina corrida, mas consegue separar 10 minutos por dia.</li>
+      <li>Quem tem mais de um filho e quer imprimir quantas vezes precisar.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bonus" id="bonus">
+  <div class="wrap wide">
+    <span class="eyebrow">Entrando hoje</span>
+    <h2>Você leva o Clube + 6 bônus</h2>
+    <div class="bgrid">
+      <div class="bcard"><span class="tag">Bônus 01</span><h3>Kit Emoções em Dia</h3><p>Inteligência emocional contra birra e descontrole.</p><span class="inc">Incluso</span></div>
+      <div class="bcard"><span class="tag">Bônus 02</span><h3>Respira e Acalma</h3><p>Autorregulação em 2 minutos pros dias difíceis.</p><span class="inc">Incluso</span></div>
+      <div class="bcard"><span class="tag">Bônus 03</span><h3>Cartões de Rotina Visual</h3><p>A criança enxerga o que vem agora e se organiza.</p><span class="inc">Incluso</span></div>
+      <div class="bcard"><span class="tag">Bônus 04</span><h3>Caça-Foco</h3><p>30 desafios de atenção cronometrados.</p><span class="inc">Incluso</span></div>
+      <div class="bcard"><span class="tag">Bônus 05</span><h3>Guia da Mãe</h3><p>Como aplicar os 10 minutos por dia sem virar briga.</p><span class="inc">Incluso</span></div>
+      <div class="bcard"><span class="tag">Bônus 06</span><h3>Pequeno Focado</h3><p>Certificado + painel de conquistas.</p><span class="inc">Incluso</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="oferta">
+  <div class="wrap">
+    <span class="eyebrow">Veja tudo o que entra hoje</span>
+    <h2>Seu acesso ao Clube Mente Brilhante</h2>
+    <div class="box">
+      <ul class="ticks" style="margin-top:0">
+        <li>Acesso ao Clube Mente Brilhante com +100 atividades passo a passo.</li>
+        <li>Método Trilha dos 5 Focos incluso.</li>
+        <li>Apostilas em PDF para imprimir quantas vezes quiser.</li>
+        <li>6 bônus exclusivos.</li>
+        <li>Acesso vitalício e garantia incondicional de 7 dias.</li>
+      </ul>
+      <div class="price">
+        <div class="big">R$ 19,90</div>
+        <p class="sub">à vista no Pix ou cartão · ou 2x de R$ 10,45</p>
+        <p style="margin-top:12px">Menos que um lanche. Acesso pra vida toda. Dez minutos por dia que mudam a relação do seu filho com o foco, com a escola e com o "eu consigo".</p>
+        <div class="cta"><a class="btn" href="#" data-cta="oferta" data-checkout>Quero tudo isso por R$ 19,90 ➝</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guarantee">
+  <div class="wrap center">
+    <img class="sel" loading="lazy" src="https://metodorendaturbo.com/wp-content/uploads/2026/07/image-54xxzzz.png" alt="Garantia de 7 dias">
+    <span class="eyebrow">Risco zero</span>
+    <h2>7 dias de garantia</h2>
+    <p>Você leva o Clube hoje por R$ 19,90, recebe o acesso na hora e já imprime a primeira atividade ainda hoje.</p>
+    <p>Aplique os 10 minutos por dia com o seu filho durante 7 dias. Se nesse prazo você achar que não valeu, peça o reembolso pelos canais da Ticto e receba o valor pago de volta.</p>
+    <div class="cta"><a class="btn" href="#" data-cta="garantia" data-checkout>Quero começar agora por R$ 19,90 ➝</a></div>
+    <p class="micro">Compra 100% segura · Pix ou cartão · acesso imediato + garantia de 7 dias</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Como recebo o acesso?</summary><p>Na hora. Assim que o pagamento é confirmado, o link chega no seu e-mail. Em poucos minutos você já está baixando o material e imprimindo a primeira atividade.</p></details>
+    <details><summary>Funciona pra qual idade?</summary><p>De 3 a 10 anos. As atividades vêm em ordem de dificuldade, então você escolhe pelo nível da criança, não só pela idade.</p></details>
+    <details><summary>Preciso entender de pedagogia pra aplicar?</summary><p>Não. Cada atividade vem com orientação simples e o Guia da Mãe ensina como conduzir os 10 minutos.</p></details>
+    <details><summary>E se meu filho é muito agitado ou distraído?</summary><p>Foi exatamente pra ele que o material foi pensado. As atividades são curtas de propósito, pra ele conseguir terminar antes de cansar e sentir que venceu.</p></details>
+    <details><summary>Em quanto tempo vejo resultado?</summary><p>Muitas mães relatam os primeiros sinais já na primeira semana, com a criança terminando mais atividades e brigando menos.</p></details>
+    <details><summary>Preciso de tela ou internet pra usar?</summary><p>Não. Você baixa os PDFs uma vez e imprime quando quiser, mesmo offline. As atividades são 100% sem tela.</p></details>
+    <details><summary>Posso usar com mais de um filho?</summary><p>Pode. Você imprime quantas vezes quiser, pra quantas crianças quiser, dentro de casa. O acesso é seu pra sempre.</p></details>
+    <details><summary>Funciona pra TDAH ou dificuldade de aprendizagem?</summary><p>As atividades treinam atenção, memória e autocontrole, mas são apoio para a rotina em casa, não tratamento, e não substituem acompanhamento profissional.</p></details>
+    <details><summary>Por quanto tempo tenho acesso?</summary><p>Pra sempre. O acesso é vitalício e inclui atualizações futuras do Clube, sem pagar de novo.</p></details>
+    <details><summary>A compra é segura?</summary><p>Sim. Seus dados são criptografados e o pagamento é processado por uma plataforma segura. Você paga no cartão ou no Pix.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia incondicional. Não se adaptou, devolvemos 100% do valor.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap center">
+    <h2>O Clube é para mães e pais que realmente querem ajudar o filho a focar e a acreditar que consegue.</h2>
+    <p>Se você está disposta a investir menos que um lanche pra ter, todo dia, 10 minutos que treinam o foco do seu filho sem tela e sem briga, essa é a sua hora.</p>
+    <div class="cta"><a class="btn" href="#" data-cta="final" data-checkout>Quero começar hoje ➝</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Aviso legal: este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. O material é um apoio educativo e não substitui acompanhamento profissional. Não vendemos o seu e-mail nem qualquer informação para terceiros.</p>
+    <p>Esta é uma página de divulgação de um produto de terceiros. A venda, a entrega e o suporte são feitos pelo produtor e pela plataforma de pagamento (Ticto). Podemos receber comissão se você comprar por esta página, sem custo extra para você.</p>
+    <p>Sena Comercial · senacomercial.com</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <span>R$ 19,90<small>acesso imediato</small></span>
+  <a class="btn" href="#" data-cta="sticky" data-checkout tabindex="-1">Quero acessar</a>
+</div>
+
+<script>
+/* ============ CONFIG ============ */
+const CONFIG = {
+  // checkout com o pid do Sena
+  CHECKOUT_URL: "https://checkout.ticto.app/O9AF660C8?pid=AFB7E55E7B",
+  PIXEL_ID: "SEU_PIXEL_ID"
+};
+/* ================================== */
+(function () {
+  function buildUrl() {
+    var url = new URL(CONFIG.CHECKOUT_URL);
+    new URLSearchParams(window.location.search).forEach(function (v, k) {
+      if (k.indexOf("utm_") === 0) url.searchParams.set(k, v);
+    });
+    return url.toString();
+  }
+  var href = buildUrl();
+  document.querySelectorAll("[data-checkout]").forEach(function (a) {
+    a.setAttribute("href", href);
+    a.setAttribute("rel", "noopener");
+    a.addEventListener("click", function () {
+      if (window.fbq) {
+        fbq("track", "InitiateCheckout", { content_name: "clube-mente-brilhante", value: 19.9, currency: "BRL" });
+        fbq("trackCustom", "CTAClick", { position: a.getAttribute("data-cta") });
+      }
+    });
+  });
+
+  if (/^\d{8,20}$/.test(CONFIG.PIXEL_ID)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", CONFIG.PIXEL_ID);
+    fbq("track", "PageView");
+    fbq("track", "ViewContent", { content_name: "clube-mente-brilhante", content_type: "product" });
+  }
+
+  var sticky = document.getElementById("sticky");
+  var hero = document.querySelector(".hero");
+  function onScroll() {
+    var on = window.scrollY > hero.offsetHeight;
+    sticky.classList.toggle("on", on);
+    sticky.setAttribute("aria-hidden", on ? "false" : "true");
+    sticky.querySelector("a").tabIndex = on ? 0 : -1;
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
