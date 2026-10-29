@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividades de foco para imprimir | 10 minutos por dia, sem tela</title>
+<meta name="description" content="Mais de 100 atividades em PDF para imprimir e praticar atenção, memória, raciocínio, coordenação e autocontrole em 10 minutos por dia.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F8FC;
+    --sheet:#FFFFFF;
+    --ink:#14213D;
+    --ink-soft:#4A5878;
+    --rule:#CBD5E8;
+    --pencil:#FFB400;
+    --pencil-dark:#E09E00;
+    --grass:#1F9D6B;
+    --grass-bg:#E5F5EE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
+  h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.1;letter-spacing:-0.02em}
+  .wrap{max-width:680px;margin:0 auto;padding:0 16px}
+  section{padding:56px 0}
+  h2{font-size:clamp(1.65rem,5.5vw,2.2rem);font-weight:800;margin-bottom:16px}
+  p+p{margin-top:12px}
+  .muted{color:var(--ink-soft)}
+
+  /* hero: caderno pautado */
+  .hero{padding:32px 0 48px;background:
+    repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--rule) 31px,var(--rule) 32px),var(--sheet);
+    border-bottom:3px solid var(--ink)}
+  .hero .brand{font-weight:700;font-size:.95rem;margin-bottom:28px;display:flex;align-items:center;gap:8px}
+  .hero .brand i{width:14px;height:14px;background:var(--pencil);border:2px solid var(--ink);border-radius:50%;display:inline-block}
+  .hero h1{font-size:clamp(2.1rem,8vw,3.2rem);font-weight:800;background:var(--sheet);display:inline;padding:2px 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .hero .lead{margin-top:22px;font-size:1.1rem;background:var(--sheet);display:inline-block;padding:4px 8px}
+  .hero-art{margin:28px auto 8px;max-width:340px}
+  .hero-art svg{width:100%;height:auto;display:block}
+
+  .btn{display:inline-block;background:var(--pencil);color:var(--ink);font-weight:700;font-size:1.1rem;text-decoration:none;padding:16px 26px;border:2px solid var(--ink);border-radius:12px;box-shadow:0 4px 0 var(--ink);transition:transform .08s,box-shadow .08s}
+  .btn:hover{background:var(--pencil-dark)}
+  .btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+  .btn:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--grass);outline-offset:3px}
+  .cta-block{margin-top:26px}
+  .micro{font-size:.9rem;color:var(--ink-soft);margin-top:12px}
+  .hero .micro{background:var(--sheet);display:inline-block;padding:2px 8px}
+
+  /* passos: sequência real */
+  .steps{list-style:none;display:grid;gap:14px;margin-top:20px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--sheet);border:2px solid var(--ink);border-radius:12px;padding:16px}
+  .steps b.n{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-size:1.3rem}
+  .steps strong{display:block;font-size:1.05rem}
+
+  /* áreas */
+  .areas{display:grid;gap:0;margin-top:18px;border-top:2px solid var(--ink)}
+  .areas div{padding:14px 0;border-bottom:1px solid var(--rule)}
+  .areas strong{font-family:'Bricolage Grotesque',sans-serif;font-size:1.2rem}
+  .areas span{display:block;color:var(--ink-soft)}
+
+  /* acesso */
+  .box{background:var(--sheet);border:2px solid var(--ink);border-radius:14px;padding:22px}
+  .check{list-style:none;margin-top:12px}
+  .check li{padding:8px 0 8px 32px;position:relative}
+  .check li::before{content:"";position:absolute;left:0;top:13px;width:18px;height:18px;border-radius:50%;background:var(--grass);}
+  .check li::after{content:"";position:absolute;left:6px;top:17px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .price{margin-top:20px;padding-top:18px;border-top:2px dashed var(--rule)}
+  .price .big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.6rem;line-height:1}
+  .price .big small{font-size:1rem;font-weight:600;color:var(--ink-soft);margin-left:6px}
+
+  .bonus{margin-top:6px;color:var(--ink-soft);font-size:.98rem}
+
+  .fit{display:grid;gap:14px;margin-top:16px}
+  .fit>div{padding:18px;border-radius:12px;border:2px solid var(--ink);background:var(--sheet)}
+  .fit .ok{background:var(--grass-bg)}
+  .fit h3{font-size:1.15rem;margin-bottom:6px}
+
+  .garantia{background:var(--ink);color:#fff}
+  .garantia h2{color:#fff}
+  .garantia .btn{margin-top:22px}
+
+  details{border-bottom:1px solid var(--rule);padding:14px 0}
+  summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:10px;color:var(--ink-soft)}
+
+  footer{padding:36px 0 110px;font-size:.85rem;color:var(--ink-soft);border-top:3px solid var(--ink);background:var(--sheet)}
+  footer a{color:var(--ink-soft)}
+  footer p+p{margin-top:10px}
+
+  /* barra fixa mobile */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--sheet);border-top:2px solid var(--ink);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
+  .sticky.on{transform:none}
+  .sticky .btn{padding:12px 18px;font-size:1rem;box-shadow:0 3px 0 var(--ink);white-space:nowrap}
+  .sticky span{font-weight:700;line-height:1.2}
+  .sticky span small{display:block;font-weight:500;color:var(--ink-soft)}
+
+  @media (min-width:720px){
+    .fit{grid-template-columns:1fr 1fr}
+    .sticky{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .btn,.sticky{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><i></i> Atividades de foco para imprimir</div>
+
+    <h1>10 minutos por dia, sem tela, para treinar o foco em casa.</h1>
+    <p class="lead">Mais de 100 folhas em PDF para crianças de 3 a 10 anos: atenção, memória, raciocínio, coordenação e autocontrole.</p>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg">
+        <g transform="rotate(-4 170 130)">
+          <rect x="30" y="14" width="250" height="232" rx="8" fill="#fff" stroke="#14213D" stroke-width="3"/>
+          <rect x="30" y="14" width="250" height="38" rx="8" fill="#FFB400" stroke="#14213D" stroke-width="3"/>
+          <text x="46" y="39" font-family="Figtree,sans-serif" font-weight="700" font-size="15" fill="#14213D">Folha 07 · Atenção</text>
+          <path d="M62 200 C 90 120, 130 210, 160 140 S 220 110, 246 84" fill="none" stroke="#4A5878" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <circle cx="62" cy="200" r="9" fill="#1F9D6B" stroke="#14213D" stroke-width="2.5"/>
+          <path d="M246 70 l5 10 11 2 -8 8 2 11 -10 -5 -10 5 2 -11 -8 -8 11 -2z" fill="#FFB400" stroke="#14213D" stroke-width="2.5" stroke-linejoin="round"/>
+        </g>
+        <g transform="translate(246 168)">
+          <circle r="46" fill="#14213D"/>
+          <circle r="38" fill="#fff"/>
+          <path d="M0 -38 A38 38 0 1 1 -33 19" fill="none" stroke="#1F9D6B" stroke-width="6" stroke-linecap="round"/>
+          <text y="7" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="22" fill="#14213D">10:00</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="cta-block">
+      <a class="btn" href="#" data-cta="hero">Quero acessar por R$ 19,90</a>
+      <p class="micro">Acesso imediato por e-mail · Pix ou cartão · garantia de 7 dias</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="muted">A ideia é simples: atividade curta, feita junto, sem tela no meio.</p>
+    <ol class="steps">
+      <li><b class="n">1</b><div><strong>Escolha uma folha</strong>As atividades são separadas por habilidade e por nível, então você começa pelo que faz sentido para a idade da criança.</div></li>
+      <li><b class="n">2</b><div><strong>Imprima em casa</strong>PDFs em A4, em preto e branco, para gastar menos tinta. Baixou uma vez, imprime quantas vezes quiser.</div></li>
+      <li><b class="n">3</b><div><strong>Faça em 10 minutos</strong>Cada folha é curta de propósito: dá para começar e terminar na mesma sentada, com você por perto.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section style="background:var(--sheet);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)">
+  <div class="wrap">
+    <h2>Cinco áreas, uma de cada vez</h2>
+    <p class="muted">O material segue uma trilha com cinco frentes de prática, em ordem crescente de dificuldade.</p>
+    <div class="areas">
+      <div><strong>Atenção</strong><span>Desafios curtos de observar, encontrar e concluir uma tarefa.</span></div>
+      <div><strong>Memória</strong><span>Jogos de lembrar e comparar.</span></div>
+      <div><strong>Raciocínio</strong><span>Formas, padrões e sequências lógicas.</span></div>
+      <div><strong>Coordenação</strong><span>Traçado, recorte e olho-mão, que ajudam na preparação para a escrita.</span></div>
+      <div><strong>Autocontrole</strong><span>Atividades de calma e respiração para os dias mais agitados.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <div class="box">
+      <ul class="check">
+        <li>Mais de 100 atividades em PDF (A4, preto e branco)</li>
+        <li>Área de membros com as fichas organizadas por habilidade</li>
+        <li>Orientação simples em cada atividade, sem precisar de formação em pedagogia</li>
+        <li>Acesso vitalício, com as atualizações do Clube</li>
+        <li>6 bônus incluídos</li>
+      </ul>
+      <p class="bonus">Bônus: Kit Emoções em Dia, Respira e Acalma, Cartões de Rotina Visual, Caça-Foco, Guia da Mãe e Pequeno Focado (certificado e painel de conquistas).</p>
+
+      <div class="price">
+        <div class="big">R$ 19,90 <small>à vista no Pix ou cartão</small></div>
+        <p class="micro" style="margin-top:6px">Ou 2x de R$ 10,45 no cartão.</p>
+        <div class="cta-block"><a class="btn" href="#" data-cta="oferta">Quero o Clube Mente Brilhante</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS: só adicione relatos reais, com autorização de quem escreveu.
+     Não invente nomes, cidades ou resultados. -->
+
+<section style="background:var(--sheet);border-top:2px solid var(--ink)">
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <div class="fit">
+      <div class="ok">
+        <h3>É para você se</h3>
+        <p>Tem filho de 3 a 10 anos, quer uma rotina de 10 minutos sem tela e prefere material impresso para fazer junto na mesa.</p>
+      </div>
+      <div>
+        <h3>Vale saber</h3>
+        <p>É um material de apoio educativo para a rotina em casa. Não é tratamento e não substitui avaliação ou acompanhamento de profissionais de saúde e educação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="garantia">
+  <div class="wrap">
+    <h2>7 dias de garantia</h2>
+    <p>Você recebe o acesso na hora, imprime a primeira folha e testa com a sua criança. Se em 7 dias achar que não era o que esperava, pode pedir o reembolso do valor pago.</p>
+    <p class="micro" style="color:#B9C4DD">O pedido de reembolso é feito pelos canais da plataforma de pagamento (Ticto).</p>
+    <a class="btn" href="#" data-cta="garantia">Começar por R$ 19,90</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Como recebo o acesso?</summary><p>Assim que o pagamento for confirmado, o link de acesso chega no e-mail cadastrado na compra.</p></details>
+    <details><summary>Para qual idade serve?</summary><p>De 3 a 10 anos. As atividades vêm em ordem de dificuldade, então você escolhe pelo nível da criança.</p></details>
+    <details><summary>Preciso de internet ou tela para usar?</summary><p>Você baixa os PDFs e imprime. As atividades em si são feitas no papel, sem tela.</p></details>
+    <details><summary>Posso usar com mais de um filho?</summary><p>Pode. Dá para imprimir quantas vezes precisar para uso dentro de casa.</p></details>
+    <details><summary>Serve para criança com TDAH ou dificuldade de aprendizagem?</summary><p>As atividades praticam atenção, memória e autocontrole, mas são apoio para a rotina e não substituem acompanhamento profissional. Se tiver dúvida sobre o desenvolvimento da sua criança, converse com o pediatra ou com um profissional da área.</p></details>
+    <details><summary>Por quanto tempo tenho acesso?</summary><p>O acesso é vitalício, conforme a oferta.</p></details>
+    <details><summary>A compra é segura?</summary><p>O pagamento é processado pela Ticto, por Pix ou cartão.</p></details>
+    <div class="cta-block"><a class="btn" href="#" data-cta="faq">Quero começar hoje</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Transparência:</strong> esta é uma página de divulgação de um produto de terceiros. A venda, a entrega e o suporte são feitos pelo produtor e pela plataforma de pagamento (Ticto). Podemos receber comissão se você comprar pelo link desta página, sem custo extra para você.</p>
+    <p>Este site não é afiliado ao Facebook, ao Instagram nem à Meta. O material é apoio educativo e não substitui acompanhamento profissional.</p>
+    <p><a href="/politica-de-privacidade">Política de privacidade</a> · <a href="/termos-de-uso">Termos de uso</a> · [SEU NOME OU RAZÃO SOCIAL] · [CNPJ/CPF] · [E-MAIL DE CONTATO]</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <span>R$ 19,90<small>acesso imediato</small></span>
+  <a class="btn" href="#" data-cta="sticky" tabindex="-1">Quero acessar</a>
+</div>
+
+<script>
+/* ============ CONFIG: edite só aqui ============ */
+const CONFIG = {
+  // Ideal: link de checkout direto do afiliado (pegue no painel da Ticto).
+  // O link abaixo é o ticto.link, que leva ao site do produtor antes do checkout.
+  AFFILIATE_URL: "https://ticto.link/to/PE696E?pid=AFB7E55E7B",
+  PIXEL_ID: "SEU_PIXEL_ID"   // troque pelo ID do pixel do Meta
+};
+/* ================================================ */
+
+(function () {
+  // repassa utm_* (e só isso) para o link de afiliado
+  function buildUrl() {
+    var url = new URL(CONFIG.AFFILIATE_URL);
+    var here = new URLSearchParams(window.location.search);
+    here.forEach(function (v, k) { if (k.indexOf("utm_") === 0) url.searchParams.set(k, v); });
+    return url.toString();
+  }
+  var href = buildUrl();
+  var ctas = document.querySelectorAll("[data-cta]");
+  ctas.forEach(function (a) {
+    a.setAttribute("href", href);
+    a.setAttribute("rel", "noopener");
+    a.addEventListener("click", function () {
+      if (window.fbq) {
+        fbq("track", "InitiateCheckout", { content_name: "clube-mente-brilhante", value: 19.9, currency: "BRL" });
+        fbq("trackCustom", "CTAClick", { position: a.getAttribute("data-cta") });
+      }
+    });
+  });
+
+  // Meta Pixel (só carrega com ID válido)
+  if (/^\d{8,20}$/.test(CONFIG.PIXEL_ID)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", CONFIG.PIXEL_ID);
+    fbq("track", "PageView");
+    fbq("track", "ViewContent", { content_name: "clube-mente-brilhante", content_type: "product" });
+  }
+
+  // barra fixa aparece depois do hero
+  var sticky = document.getElementById("sticky");
+  var hero = document.querySelector(".hero");
+  function onScroll() {
+    var on = window.scrollY > hero.offsetHeight - 80;
+    sticky.classList.toggle("on", on);
+    sticky.setAttribute("aria-hidden", on ? "false" : "true");
+    sticky.querySelector("a").tabIndex = on ? 0 : -1;
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
