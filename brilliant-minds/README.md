@@ -7,25 +7,28 @@ url base: `senacomercial.com/brilliant-minds`
 
 ```
 brilliant-minds/
-  index.html          hub interno (noindex) listando as versões
-  {idioma}/
-    {versao}/
-      index.html      -> senacomercial.com/brilliant-minds/{idioma}/{versao}
-      assets/ ou img/ arquivos da própria versão
+  index.html            hub interno (noindex) listando as versões
+  {idioma}/             tradução do produto: br, fr, es...
+    {estilo}/           estilo/design da página de vendas e oferta: lp-orig, lp-01, lp-02...
+      index.html        -> senacomercial.com/brilliant-minds/{idioma}/{estilo}
+      assets/ ou img/   arquivos da própria página
 ```
 
-- `br/lp-orig` — original em português
-- `fr/lp-01` — versão em francês
+- `br/lp-orig` — português, estilo original
+- `fr/lp-01` — francês, estilo 01
 
 ## convenção
 
-- idioma = código iso curto em minúsculo: `br`, `fr`, `en`, `es`, `de`, `it`...
-- versão = `lp-orig` para a original do idioma, `lp-01`, `lp-02`... para variações/testes
-- cada versão é autocontida: assets dentro da própria pasta, referenciados com caminho absoluto
+- 1º nível = idioma (código curto minúsculo): `br` português, `fr` francês, `es` espanhol, `en`, `de`, `it`...
+- 2º nível = estilo/design da página de vendas e ofertas. o slug do estilo é o mesmo em todos os idiomas:
+  `lp-orig`, `lp-01`, `lp-02`...
+- o mesmo estilo traduzido fica em paralelo: `br/lp-01`, `fr/lp-01`, `es/lp-01`
+- cada página é autocontida: assets dentro da própria pasta, com caminho absoluto
   (ex: `/brilliant-minds/fr/lp-01/img/hero.svg`)
-- nova versão: copie uma pasta existente, renomeie e troque os caminhos `/brilliant-minds/{idioma}/{versao-antiga}/` pelo novo
-- novo idioma: crie `brilliant-minds/{idioma}/` e coloque as versões dentro
-- adicione a nova versão no `index.html` do hub
+- novo estilo: crie `lp-0X` no idioma base e depois copie pros outros idiomas traduzindo
+- novo idioma: crie `brilliant-minds/{idioma}/` e copie os estilos que quiser traduzir
+- ao copiar, troque `/brilliant-minds/{idioma-antigo}/{estilo-antigo}/` pelo novo caminho
+- adicione a nova página no `index.html` do hub
 
 ## obs
 
