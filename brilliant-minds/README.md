@@ -14,9 +14,10 @@ brilliant-minds/
       assets/ ou img/   arquivos da própria página
 ```
 
-- `br/lp-orig` — português, estilo original
+- `br/lp-orig` — português, estilo original (tradução da versão em espanhol)
 - `br/lp-01` — português, estilo 01 (claude design: bricolage grotesque, quiz do foco, oferta r$ 19,90)
 - `fr/lp-01` — francês, estilo 01
+- `es/lp-orig` — espanhol, estilo original
 - `es/lp-01` — espanhol, estilo 01 (preço em us$)
 
 ## convenção
