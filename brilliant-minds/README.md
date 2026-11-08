@@ -17,6 +17,7 @@ brilliant-minds/
 - `br/lp-orig` — português, estilo original
 - `br/lp-01` — português, estilo 01 (claude design: bricolage grotesque, quiz do foco, oferta r$ 19,90)
 - `fr/lp-01` — francês, estilo 01
+- `es/lp-01` — espanhol, estilo 01 (preço em us$)
 
 ## convenção
 
