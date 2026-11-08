@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mente Brilhante | Moins d'écran, plus de concentration en 10 minutes par jour</title>
+<meta name="description" content="Des activités imprimables pour travailler l'attention, la mémoire et le calme de votre enfant, classées par âge. 10 minutes par jour, zéro écran.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1E1A33; --cream:#FFFBF2; --sand:#FFF1C9; --yel:#FFE08A;
+    --blue:#3557D6; --blue-dark:#2843A8; --lblue:#CBDDFF; --pink:#FFD0C4; --mint:#D4F2DC;
+    --coral:#D2452B; --coral-shadow:#A8301B; --coral-ink:#C13B22; --coral-deco:#F2654A;
+    --muted:#5E5976; --soft:#4A4660;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{color:var(--blue-dark)}
+  h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;margin:0}
+  h2{font-size:clamp(32px,4.2vw,54px);line-height:1;letter-spacing:-0.035em}
+  p{margin:0}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+  .topbar{background:var(--ink);color:var(--cream);text-align:center;font-size:14px;font-weight:700;padding:10px 16px}
+  header.site{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:18px;padding-bottom:18px}
+  .logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-0.03em}
+  .logo span{color:var(--coral-ink)}
+  .btn-sm{background:var(--ink);color:var(--cream);font-weight:800;font-size:14px;padding:12px 18px;border-radius:12px}
+  .btn-sm:hover{color:var(--cream);background:#322C54}
+
+  .btn{display:inline-block;background:var(--coral);color:#fff;font-weight:800;font-size:17px;padding:18px 28px;border-radius:14px;box-shadow:0 5px 0 var(--coral-shadow);text-align:center;transition:transform .08s,box-shadow .08s}
+  .btn:hover{color:#fff;background:#BE3D24}
+  .btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--coral-shadow)}
+  .btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--ink);box-shadow:0 5px 0 var(--ink);padding:16px 24px}
+  .btn-ghost:hover{background:#fff;color:var(--ink)}
+  .btn-ghost:active{box-shadow:0 1px 0 var(--ink)}
+  .btn-white{background:#fff;color:var(--ink);box-shadow:0 5px 0 var(--coral-shadow)}
+  .btn-white:hover{background:#fff;color:var(--ink)}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:48px;align-items:center;padding-top:40px;padding-bottom:80px}
+  .hero-text{display:flex;flex-direction:column;gap:24px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{font-weight:800;font-size:13px;padding:7px 12px;border-radius:999px}
+  .hero h1{font-size:clamp(44px,6.4vw,84px);line-height:.96;letter-spacing:-0.045em;text-wrap:balance}
+  .hero h1 span{color:var(--blue)}
+  .lead{font-size:20px;line-height:1.55;color:var(--soft);max-width:540px;text-wrap:pretty}
+  .actions{display:flex;gap:12px;flex-wrap:wrap}
+  .micro{font-size:14px;font-weight:600;color:var(--muted)}
+  .hero-art{aspect-ratio:1/1;border-radius:32px;border:2px solid var(--ink);box-shadow:0 8px 0 var(--ink);background:var(--sand);overflow:hidden}
+  .hero-art img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* douleurs */
+  .pains{background:var(--ink);color:var(--cream)}
+  .pains .wrap{padding-top:88px;padding-bottom:88px}
+  .pains h2{max-width:820px;text-wrap:balance;margin-bottom:12px}
+  .pains .sub{font-size:18px;color:rgba(255,251,242,.78);margin-bottom:40px}
+  .grid-pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px}
+  .pain{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px}
+  .pain b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;line-height:1.2;color:var(--yel)}
+  .pain span{font-size:15px;line-height:1.55;color:rgba(255,251,242,.84)}
+  .pains .close{margin-top:40px;font-size:20px;line-height:1.5;max-width:720px;text-wrap:pretty}
+  .pains .close strong{color:var(--yel)}
+
+  /* test */
+  .test{max-width:900px;margin:0 auto;padding:96px 24px}
+  .test-head{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center;margin-bottom:32px}
+  .kicker{font-weight:800;font-size:14px;color:var(--coral-ink);letter-spacing:.04em}
+  .card{background:#fff;border:2px solid var(--ink);border-radius:28px;box-shadow:0 8px 0 var(--ink);padding:clamp(22px,5vw,44px)}
+  .step{display:flex;flex-direction:column;gap:24px}
+  .step[hidden]{display:none}
+  .step .label{font-weight:700;font-size:14px;color:var(--muted)}
+  .q{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-0.02em;text-wrap:balance}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+  .opt{cursor:pointer;font-family:'Figtree',sans-serif;font-size:17px;font-weight:700;color:var(--ink);background:#F6F3FF;border:2px solid var(--ink);border-radius:16px;padding:20px 18px;text-align:left;transition:transform .1s,background .1s}
+  .opt:hover{background:var(--yel);transform:translateY(-2px)}
+  .qtop{display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .bar{flex:1;max-width:260px;height:10px;background:#E4E0FA;border-radius:999px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--blue);border-radius:999px;width:20%}
+  .result{align-items:flex-start;gap:18px}
+  .badge{background:var(--yel);font-weight:800;font-size:13px;padding:7px 12px;border-radius:999px}
+  .r-level{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1;letter-spacing:-0.035em}
+  .r-d{font-size:18px;line-height:1.6;color:var(--soft);text-wrap:pretty}
+  .r-plan{background:#E8EEFF;border-radius:16px;padding:18px 20px;font-size:16px;line-height:1.5;font-weight:600}
+  .btn-redo{cursor:pointer;background:none;border:2px solid var(--ink);color:var(--ink);font-family:'Figtree',sans-serif;font-weight:800;font-size:15px;padding:14px 20px;border-radius:14px}
+  .disclaimer{font-size:13px;line-height:1.5;color:var(--muted)}
+
+  /* pourquoi */
+  .why{padding-bottom:96px}
+  .why h2{max-width:760px;margin-bottom:36px}
+  .grid-why{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+  .why-card{border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:12px}
+  .why-card img{width:100%;max-width:220px;height:auto;display:block;margin-bottom:8px}
+  .why-card b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;line-height:1.15}
+  .why-card span{font-size:16px;line-height:1.6;color:#3A3652}
+
+  /* kits */
+  .kits{background:var(--sand);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .kits .wrap{padding-top:88px;padding-bottom:88px}
+  .kits h2{margin-bottom:12px}
+  .kits .sub{font-size:18px;color:var(--soft);margin-bottom:36px}
+  .grid-kits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .kit{background:#fff;border:2px solid var(--ink);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+  .kit .pic{aspect-ratio:4/3;border-bottom:2px solid var(--ink);overflow:hidden}
+  .kit .pic img{width:100%;height:100%;object-fit:cover;display:block}
+  .kit .txt{padding:24px;display:flex;flex-direction:column;gap:10px}
+  .kit .age{font-weight:800;font-size:13px;color:var(--muted)}
+  .kit .name{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;letter-spacing:-0.02em}
+  .kit .desc{font-size:15px;line-height:1.55;color:var(--soft)}
+  .skills{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0}
+  .skills li{background:#fff;border:2px solid var(--ink);font-weight:800;font-size:15px;padding:10px 16px;border-radius:999px}
+
+  /* étapes */
+  .how{padding-top:96px;padding-bottom:96px}
+  .how h2{margin-bottom:40px}
+  .grid-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;list-style:none;padding:0;margin:0}
+  .grid-steps li{display:flex;flex-direction:column;gap:12px}
+  .grid-steps .n{width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}
+  .grid-steps strong{font-size:19px;font-weight:800}
+  .grid-steps span.d{font-size:15px;line-height:1.55;color:var(--soft)}
+
+  /* offre */
+  .offer{padding-bottom:96px}
+  .offer-card{max-width:620px;margin:0 auto;background:#fff;border:2px solid var(--ink);border-radius:32px;box-shadow:0 10px 0 var(--ink);overflow:hidden}
+  .offer-head{background:var(--blue);color:#fff;padding:22px 32px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.02em}
+  .offer-body{padding:clamp(24px,5vw,40px);display:flex;flex-direction:column;gap:22px}
+  .offer-sub{font-size:15px;font-weight:600;color:var(--muted)}
+  .price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .price b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(56px,8vw,80px);letter-spacing:-0.05em;line-height:1}
+  .price span{font-weight:700;color:var(--muted)}
+  .incl{display:flex;flex-direction:column;gap:12px;list-style:none;padding:0;margin:0}
+  .incl li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:16px;font-weight:600;line-height:1.45}
+  .incl li::before{content:"✓";color:var(--blue);font-weight:800}
+  .trust{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-size:13px;font-weight:700;color:var(--muted)}
+  .guarantee{background:var(--sand);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+  .guarantee b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:28px;color:var(--coral-ink);line-height:1}
+  .guarantee span{font-size:14px;line-height:1.5;color:#3A3652}
+
+  /* faq */
+  .faq{max-width:820px;margin:0 auto;padding:0 24px 96px}
+  .faq h2{font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.03em;margin-bottom:20px}
+  details{background:#fff;border:2px solid var(--ink);border-radius:18px;overflow:hidden;margin-bottom:10px}
+  summary{cursor:pointer;list-style:none;padding:20px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:17px;font-weight:800}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:22px;flex-shrink:0;color:var(--blue)}
+  details[open] summary::after{content:"−"}
+  details p{padding:0 22px 20px;font-size:16px;line-height:1.6;color:var(--soft)}
+
+  /* final */
+  .final{background:var(--coral-deco);color:var(--ink)}
+  .final .wrap{max-width:900px;padding-top:88px;padding-bottom:88px;text-align:center;display:flex;flex-direction:column;gap:24px;align-items:center}
+  .final h2{font-size:clamp(38px,5.6vw,72px);line-height:.98;letter-spacing:-0.045em;text-wrap:balance}
+  .final .micro{color:var(--ink);font-weight:700}
+
+  footer{padding:36px 0 48px;font-size:13.5px;line-height:1.6;color:var(--muted);border-top:3px solid var(--ink);background:#fff}
+  footer a{color:var(--muted);text-decoration:underline}
+  footer p+p{margin-top:10px}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .btn,.opt{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Matériel numérique à imprimer chez soi · Accès immédiat dans votre boîte mail</div>
+
+<header class="site wrap">
+  <div class="logo">Mente <span>Brilhante</span></div>
+  <a class="btn-sm" href="#offre" data-cta="header">Je le veux pour R$ 19,90</a>
+</header>
+
+<main>
+
+<section class="hero wrap">
+  <div class="hero-text">
+    <div class="chips">
+      <span class="chip" style="background:#FFE08A">3 à 12 ans</span>
+      <span class="chip" style="background:#CBDDFF">Zéro écran</span>
+      <span class="chip" style="background:#FFD0C4">10 min par jour</span>
+    </div>
+    <h1>Moins d'écran. Plus de concentration. <span>En 10 minutes par jour.</span></h1>
+    <p class="lead">Des activités imprimables pour l'attention, la mémoire et le calme, classées par âge. Vous imprimez, vous donnez la feuille, et votre enfant s'amuse loin des écrans.</p>
+    <div class="actions">
+      <a class="btn" href="#offre" data-cta="hero">Je veux Mente Brilhante</a>
+      <a class="btn btn-ghost" href="#test">Faire le test de concentration</a>
+    </div>
+    <div class="micro">Paiement unique de R$ 19,90 · Garantie de 7 jours</div>
+  </div>
+  <div class="hero-art">
+    <img src="/brilliant-minds/fr/lp-01/img/hero.svg" width="800" height="800" alt="Des feuilles d'activités imprimées sur une table, avec des crayons de couleur et un réveil qui indique 10 minutes">
+  </div>
+</section>
+
+<section class="pains">
+  <div class="wrap">
+    <h2>Si l'une de ces scènes se passe chez vous…</h2>
+    <p class="sub">…vous n'êtes pas seul(e). Et ce n'est pas un manque d'éducation.</p>
+    <div class="grid-pains">
+      <div class="pain"><b>Trop d'écrans</b><span>Éteindre la tablette devient un bras de fer chaque soir.</span></div>
+      <div class="pain"><b>Les devoirs n'en finissent pas</b><span>Une heure plus tard, il en est toujours à la première question.</span></div>
+      <div class="pain"><b>Les notes baissent</b><span>« Il est intelligent, mais il n'est pas attentif », dit l'enseignante.</span></div>
+      <div class="pain"><b>Agitation et crises</b><span>Tout ce qui demande de la patience tourne aux larmes ou aux disputes.</span></div>
+      <div class="pain"><b>Et si c'était un TDAH ?</b><span>Le doute s'installe, et vous ne savez pas par où commencer.</span></div>
+      <div class="pain"><b>Pas le temps</b><span>Vous rentrez fatigué(e) et vous n'avez pas l'énergie d'inventer une activité.</span></div>
+    </div>
+    <p class="close">L'attention est une compétence. Comme lire ou faire du vélo, <strong>elle s'entraîne</strong>, un peu chaque jour.</p>
+  </div>
+</section>
+
+<section id="test" class="test">
+  <div class="test-head">
+    <span class="kicker">TEST GRATUIT · 1 MINUTE</span>
+    <h2>Où en est la concentration de votre enfant ?</h2>
+  </div>
+  <div class="card" aria-live="polite">
+    <div class="step" id="s-age">
+      <span class="label">D'abord, l'âge</span>
+      <div class="q">Quel âge a votre enfant ?</div>
+      <div class="opts" id="ages"></div>
+    </div>
+    <div class="step" id="s-q" hidden>
+      <div class="qtop"><span class="label" id="q-label"></span><div class="bar"><i id="q-bar"></i></div></div>
+      <div class="q" id="q-text"></div>
+      <div class="opts" id="q-opts"></div>
+    </div>
+    <div class="step result" id="s-res" hidden>
+      <span class="badge" id="r-badge"></span>
+      <div class="r-level" id="r-level"></div>
+      <p class="r-d" id="r-d"></p>
+      <div class="r-plan" id="r-plan"></div>
+      <div class="actions">
+        <a class="btn" href="#offre" data-cta="test">Je prends le matériel pour R$ 19,90</a>
+        <button class="btn-redo" type="button" id="redo">Refaire le test</button>
+      </div>
+      <span class="disclaimer">Ce test est une orientation, pas un diagnostic. Si vous soupçonnez un TDAH, parlez-en à un pédiatre ou à un neuropédiatre.</span>
+    </div>
+  </div>
+</section>
+
+<section class="why wrap">
+  <h2>Pourquoi le papier fonctionne</h2>
+  <div class="grid-why">
+    <div class="why-card" style="background:#CBDDFF">
+      <img src="/brilliant-minds/fr/lp-01/img/why-1.svg" width="240" height="150" alt="" loading="lazy">
+      <b>Pas de notification, pas de distraction</b>
+      <span>Sur papier, pas de vidéo qui saute ni de jeu qui appelle. Il n'y a que lui et le défi.</span>
+    </div>
+    <div class="why-card" style="background:#FFD0C4">
+      <img src="/brilliant-minds/fr/lp-01/img/why-2.svg" width="240" height="150" alt="" loading="lazy">
+      <b>Ça a une fin</b>
+      <span>Chaque feuille se termine. L'enfant sent qu'il a accompli quelque chose, et il veut faire la suivante.</span>
+    </div>
+    <div class="why-card" style="background:#D4F2DC">
+      <img src="/brilliant-minds/fr/lp-01/img/why-3.svg" width="240" height="150" alt="" loading="lazy">
+      <b>La main et la tête ensemble</b>
+      <span>Découper, relier, tracer et colorier demandent une vraie attention, pas seulement des tapotements rapides.</span>
+    </div>
+  </div>
+</section>
+
+<section class="kits">
+  <div class="wrap">
+    <h2>Ce que contient le matériel</h2>
+    <p class="sub">Trois kits, un pour chaque étape. Vous les recevez tous.</p>
+    <div class="grid-kits">
+      <div class="kit">
+        <div class="pic" style="background:#FFF1C9"><img src="/brilliant-minds/fr/lp-01/img/kit-1.svg" width="800" height="600" alt="Feuille d'exemple du kit Petits Brillants : formes et chemins pointillés à tracer, et un visage à colorier" loading="lazy"></div>
+        <div class="txt"><span class="age">3 à 5 ans</span><span class="name">Petits Brillants</span><span class="desc">Tracés, paires, couleurs et formes pour les premières minutes de concentration.</span></div>
+      </div>
+      <div class="kit">
+        <div class="pic" style="background:#E3ECFF"><img src="/brilliant-minds/fr/lp-01/img/kit-2.svg" width="800" height="600" alt="Feuille d'exemple du kit Explorateurs : un labyrinthe et une suite de formes à compléter" loading="lazy"></div>
+        <div class="txt"><span class="age">6 à 8 ans</span><span class="name">Explorateurs</span><span class="desc">Labyrinthes, séquences, jeux des différences et activités de mémoire.</span></div>
+      </div>
+      <div class="kit">
+        <div class="pic" style="background:#FFE6DF"><img src="/brilliant-minds/fr/lp-01/img/kit-3.svg" width="800" height="600" alt="Feuille d'exemple du kit Défis : un casse-tête de logique avec une grille de formes et une case manquante" loading="lazy"></div>
+        <div class="txt"><span class="age">9 à 12 ans</span><span class="name">Défis</span><span class="desc">Logique, énigmes, attention sélective et exercices de calme avant les devoirs.</span></div>
+      </div>
+    </div>
+    <ul class="skills">
+      <li>Attention</li><li>Mémoire</li><li>Calme</li><li>Coordination</li><li>Raisonnement</li>
+    </ul>
+  </div>
+</section>
+
+<section class="how wrap">
+  <h2>Du paiement à la première activité : 5 minutes</h2>
+  <ol class="grid-steps">
+    <li><span class="n">1</span><strong>Achetez</strong><span class="d">Pix ou carte, en moins d'une minute.</span></li>
+    <li><span class="n">2</span><strong>Recevez</strong><span class="d">Le lien des PDF arrive aussitôt dans votre boîte mail.</span></li>
+    <li><span class="n">3</span><strong>Imprimez</strong><span class="d">Chez vous, en noir et blanc, autant de fois que vous le voulez.</span></li>
+    <li><span class="n">4</span><strong>10 minutes</strong><span class="d">Donnez une feuille par jour. Il la fait tout seul.</span></li>
+  </ol>
+</section>
+
+<section id="offre" class="offer wrap">
+  <div class="offer-card">
+    <div class="offer-head">Mente Brilhante · accès complet</div>
+    <div class="offer-body">
+      <div>
+        <div class="offer-sub">Moins cher qu'un goûter au centre commercial</div>
+        <div class="price"><b>R$ 19,90</b><span>paiement unique</span></div>
+      </div>
+      <ul class="incl">
+        <li>3 kits par âge : 3–5, 6–8 et 9–12 ans</li>
+        <li>Des activités d'attention, de mémoire, de calme et de raisonnement</li>
+        <li>Un guide rapide pour les parents : comment l'utiliser en 10 min par jour</li>
+        <li>Impression illimitée, pour tous vos enfants</li>
+        <li>Accès à vie aux fichiers</li>
+        <li>Garantie de 7 jours</li>
+      </ul>
+      <a class="btn" href="#" data-cta="offre" style="font-size:19px;padding:20px">Je veux Mente Brilhante maintenant</a>
+      <div class="trust"><span>Pix ou carte</span><span>·</span><span>Paiement sécurisé</span><span>·</span><span>Accès immédiat</span></div>
+      <div class="guarantee">
+        <b>7 jours</b>
+        <span>Imprimez, testez avec votre enfant. Si cela ne vous convient pas, vous pouvez demander le remboursement intégral, via la plateforme de paiement (Ticto).</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Les questions des parents</h2>
+  <details><summary>Comment je reçois le matériel ?</summary><p>Juste après le paiement, vous recevez un e-mail avec le lien pour télécharger les PDF. Avec Pix, l'accès est immédiat.</p></details>
+  <details><summary>Faut-il une imprimante couleur ?</summary><p>Non. Toutes les activités fonctionnent en noir et blanc, et l'enfant peut quand même les colorier.</p></details>
+  <details><summary>Puis-je imprimer plusieurs fois ?</summary><p>Oui. Imprimez autant de fois que vous le souhaitez et utilisez le matériel avec tous les enfants de la maison.</p></details>
+  <details><summary>Est-ce adapté aux enfants avec un TDAH ?</summary><p>Le matériel est un soutien pour entraîner l'attention à la maison, pas un traitement. Beaucoup de familles l'utilisent en complément d'un suivi professionnel.</p></details>
+  <details><summary>Combien de temps par jour ?</summary><p>10 minutes suffisent. Chaque activité a un début, un milieu et une fin : elle se termine sans que vous ayez à insister.</p></details>
+  <details><summary>Et si cela ne me plaît pas ?</summary><p>Vous avez 7 jours pour demander le remboursement intégral, via la plateforme de paiement (Ticto).</p></details>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Ce soir, vous pouvez déjà imprimer la première feuille.</h2>
+    <a class="btn btn-white" href="#" data-cta="final" style="font-size:18px;padding:18px 32px">Je le veux pour R$ 19,90</a>
+    <span class="micro">Garantie de 7 jours · Accès immédiat</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Transparence :</strong> cette page présente un produit tiers. La vente, la livraison et le support sont assurés par le producteur et par la plateforme de paiement (Ticto). Nous pouvons percevoir une commission si vous achetez via le lien de cette page, sans frais supplémentaires pour vous.</p>
+    <p>Ce site n'est pas affilié à Facebook, à Instagram ni à Meta. Le matériel est un soutien éducatif et ne remplace pas un suivi professionnel.</p>
+    <p><a href="/politica-de-privacidade">Politique de confidentialité</a> · <a href="/termos-de-uso">Conditions d'utilisation</a></p>
+    <p>SENA EXPANSÃO COMERCIAL LTDA · CNPJ 62.543.744/0001-00 · <a href="mailto:airton@senacomercial.com">airton@senacomercial.com</a></p>
+  </div>
+</footer>
+
+<script>
+/* ============ CONFIG : à modifier ici seulement ============ */
+const CONFIG = {
+  AFFILIATE_URL: "https://payment.ticto.app/O9AF660C8?pid=AFB7E55E7B",
+  PIXEL_ID: "SEU_PIXEL_ID"   // remplacer par l'ID du pixel Meta
+};
+/* ============================================================ */
+
+(function () {
+  /* ---- liens d'achat (transmet uniquement les utm_*) ---- */
+  function buildUrl() {
+    var url = new URL(CONFIG.AFFILIATE_URL);
+    var here = new URLSearchParams(window.location.search);
+    here.forEach(function (v, k) { if (k.indexOf("utm_") === 0) url.searchParams.set(k, v); });
+    return url.toString();
+  }
+  var buyUrl = buildUrl();
+  // les boutons "#offre" font défiler vers l'offre ; seuls les boutons de l'offre et de fin ouvrent le paiement
+  document.querySelectorAll("[data-cta]").forEach(function (a) {
+    var pos = a.getAttribute("data-cta");
+    var goesToCheckout = (pos === "offre" || pos === "final");
+    if (goesToCheckout) { a.setAttribute("href", buyUrl); a.setAttribute("rel", "noopener"); }
+    a.addEventListener("click", function () {
+      if (window.fbq) {
+        fbq("trackCustom", "CTAClick", { position: pos });
+        if (goesToCheckout) fbq("track", "InitiateCheckout", { content_name: "mente-brilhante-fr", value: 19.9, currency: "BRL" });
+      }
+    });
+  });
+
+  if (/^\d{8,20}$/.test(CONFIG.PIXEL_ID)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", CONFIG.PIXEL_ID);
+    fbq("track", "PageView");
+    fbq("track", "ViewContent", { content_name: "mente-brilhante-fr", content_type: "product" });
+  }
+
+  /* ---- test de concentration ---- */
+  var AGES = [
+    { k: "p", label: "3 à 5 ans", kit: "Petits Brillants", bg: "#FFE08A" },
+    { k: "m", label: "6 à 8 ans", kit: "Explorateurs", bg: "#CBDDFF" },
+    { k: "g", label: "9 à 12 ans", kit: "Défis", bg: "#FFD0C4" }
+  ];
+  var Q = [
+    ["Combien de temps d'écran votre enfant a-t-il par jour ?", ["Moins d'1 h", "De 1 h à 3 h", "Plus de 3 h"]],
+    ["Termine-t-il ses devoirs ou une activité sans que vous ayez à le relancer ?", ["Presque toujours", "Parfois", "Presque jamais"]],
+    ["Peut-il rester 10 minutes sur une même activité ?", ["Sans problème", "Avec effort", "Pas du tout"]],
+    ["Faut-il lui répéter plusieurs fois la même consigne ?", ["Rarement", "Parfois", "Toujours"]],
+    ["S'agite-t-il ou fait-il des crises quand il faut être patient ?", ["Rarement", "Parfois", "Presque toujours"]]
+  ];
+  var st = { age: null, q: 0, score: 0 };
+  var $ = function (id) { return document.getElementById(id); };
+
+  function show(which) {
+    $("s-age").hidden = which !== "age";
+    $("s-q").hidden = which !== "q";
+    $("s-res").hidden = which !== "res";
+  }
+  function btn(label, cls, onClick, bg) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = cls; b.textContent = label;
+    if (bg) b.style.background = bg;
+    b.addEventListener("click", onClick);
+    return b;
+  }
+  function renderAges() {
+    var box = $("ages"); box.textContent = "";
+    AGES.forEach(function (a) {
+      var b = btn(a.label, "opt", function () { st.age = a; st.q = 0; st.score = 0; renderQ(); show("q"); }, a.bg);
+      b.style.fontSize = "18px"; b.style.fontWeight = "800"; b.style.padding = "22px 18px";
+      box.appendChild(b);
+    });
+  }
+  function renderQ() {
+    $("q-label").textContent = "Question " + (st.q + 1) + " sur " + Q.length;
+    $("q-bar").style.width = ((st.q + 1) / Q.length * 100) + "%";
+    $("q-text").textContent = Q[st.q][0];
+    var box = $("q-opts"); box.textContent = "";
+    Q[st.q][1].forEach(function (label, v) {
+      box.appendChild(btn(label, "opt", function () {
+        st.score += v;
+        if (st.q + 1 >= Q.length) { renderResult(); show("res"); }
+        else { st.q += 1; renderQ(); }
+      }));
+    });
+  }
+  function renderResult() {
+    var a = st.age, s = st.score, r;
+    if (s <= 3) r = ["Concentration sur la bonne voie",
+      "Votre enfant a déjà de bonnes bases. Les activités entretiennent ce rythme et le préparent à une école plus exigeante.",
+      "Commencez par le kit " + a.kit + " : 3 activités par semaine."];
+    else if (s <= 6) r = ["Concentration en dents de scie",
+      "C'est le profil le plus courant : il arrive à se concentrer, mais pas longtemps. Un peu d'entraînement chaque jour fait grandir ce temps.",
+      "Commencez par le kit " + a.kit + " : 1 activité par jour, 10 minutes."];
+    else r = ["La concentration demande de l'attention",
+      "La distraction pèse sur votre quotidien. Commencez par les activités de calme avant celles de concentration. Le moment des devoirs devrait s'apaiser.",
+      "Commencez par le kit " + a.kit + " : calme + concentration, tous les jours."];
+    $("r-badge").textContent = "Résultat · " + a.label;
+    $("r-level").textContent = r[0]; $("r-d").textContent = r[1]; $("r-plan").textContent = r[2];
+  }
+  $("redo").addEventListener("click", function () { st = { age: null, q: 0, score: 0 }; show("age"); });
+  renderAges();
+})();
+</script>
+</body>
+</html>
