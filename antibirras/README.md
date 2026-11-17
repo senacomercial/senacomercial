@@ -26,7 +26,7 @@ mesma convenção de `brilliant-minds/`: 1º nível idioma, 2º nível estilo da
 
 ## pendências
 
+- foto da seção 2 (mãe exausta) já está no ar, acima do título e ao lado das frases de dor
 - trocar a foto de capa (`.hero__photo`) pela imagem de criança em birra no supermercado
-- incluir foto de mãe exausta na seção 2 (reinserir um `<figure class="dor__foto">` com `<img class="dor__img">` no bloco `.dor__titulo`, logo após o parágrafo de abertura)
 - confirmar no hotmart que a garantia configurada é de 15 dias
 - ativar o pixel `1500638468627308` também no produto do hotmart, para o evento Purchase
